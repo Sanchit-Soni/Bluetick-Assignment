@@ -22,10 +22,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="../CSS/index.css" />
-    <link rel="stylesheet" href="../CSS/about.css" />
-    <link rel="stylesheet" href="../CSS/contact.css" />
-
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/about.css" />
     <title>Bluetick</title>
   </head>
   <body>
@@ -53,71 +51,53 @@
               </div>
             </div>
           </li>
-          <li><a href="about.html" class="menu-btn">About</a></li>
-          <li><a href="contact.html" class="menu-btn active">Contact</a></li>
+          <li><a href="about.html" class="menu-btn active">About</a></li>
+          <li><a href="contact.html" class="menu-btn">Contact</a></li>
         </ul>
       </div>
     </nav>
+
     <section>
       <div class="container-head">
-        <center><p class="contact-text">Contact Us</p></center>
+        <center><p class="about-text">About us</p></center>
 
         <ul class="breadcrumb">
           <li><a href="home.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li>Contact Us</li>
+          <li>About us</li>
         </ul>
       </div>
 
-      <div class="form-container">
-        <p class="contact-text2">Feel Free To Contact Us</p>
-        <form
-          action="mailto:sanchitsony@gmail.com"
-          method="post"
-          enctype="text/plain"
-        >
-          <div class="fields">
-            <div class="field name">
-              <input type="text" placeholder="Name" name="name" required />
-            </div>
-            <div class="field email">
-              <input type="email" placeholder="Email" name="mail" required />
-            </div>
-          </div>
-
-          <div class="field">
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="123-45-678"
-              pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"
-              required
-            /><br /><br />
-
+      <div class="about-card">
+        <div class="card-left">
+          <p class="about-head">BLUETICK CONSULTANTS</p>
+          <p class="about-text2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vitae
+            soluta magnam reprehenderit odio eos necessitatibus repellat.
+            Laudantium nihil commodi assumenda eveniet, delectus mollitia. Ipsum
+            quasi impedit optio a repellat.
+          </p>
+          <p class="about-text2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vitae
+            soluta magnam reprehenderit odio eos necessitatibus repellat.
+            Laudantium nihil commodi assumenda eveniet, delectus mollitia. Ipsum
+            quasi impedit optio a repellat.
+          </p>
+          <p class="about-text2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vitae
+            soluta magnam reprehenderit odio eos necessitatibus repellat.
+            Laudantium nihil commodi assumenda eveniet, delectus mollitia. Ipsum
+            quasi impedit optio a repellat.
+          </p>
+        </div>
+        <div class="card-right">
+          <center>
+            <img
+              class="about-image"
+              src="https://image.freepik.com/free-vector/letter-v-people-abstract-logo-vector_23987-385.jpg"
             />
-          </div>
-          <div class="field textarea">
-            <textarea
-              cols="30"
-              rows="10"
-              type="messgae"
-              placeholder="Message.."
-              name="message"
-              required
-            ></textarea>
-          </div>
-          <div class="button">
-            <button type="submit" value="Send">Send message</button>
-            <button type="reset" value="Reset">Reset</button>
-          </div>
-        </form>
-
-        <br />
-        <h1>Our Location</h1>
-
-        <div id="googleMap" style="width: 100%; height: 400px"></div>
+          </center>
+        </div>
       </div>
     </section>
 
@@ -164,19 +144,6 @@
       </span>
     </footer>
 
-    <script>
-      function myMap() {
-        var mapProp = {
-          center: new google.maps.LatLng(23.2599, 77.4126),
-          zoom: 5,
-        };
-        var map = new google.maps.Map(
-          document.getElementById("googleMap"),
-          mapProp
-        );
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAM3Du3DJ2XkM_FfF7RNZQFJtiNjV9fFSI&callback=myMap"></script>
-    <script src="../JS/index.js"></script>
+    <script src="./JS/index.js"></script>
   </body>
 </html>
