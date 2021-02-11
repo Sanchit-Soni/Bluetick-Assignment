@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* section {
+  padding: 80px 0;
+} */
+
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 25px 0;
+  background: black;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-around;
+}
+section {
+  padding: 80px 0;
+}
+
+.nav.sticky {
+  padding: 30px 0;
+  background: black;
+}
+.list {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+}
+.nav .list li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+.text {
+  font-size: 15px;
+  color: rgb(53, 177, 235);
+  padding: 8px 0;
+}
+.menu-btn {
+  font-size: 23px;
+  cursor: pointer;
+  text-align: center;
+  padding: 8px 0;
+}
+.text-extra {
+  color: blue;
+}
+.nav .list li a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.nav .list li a:hover {
+  color: rgb(53, 177, 235);
+}
+.nav .list li a:active {
+  color: rgb(53, 177, 235);
+}
+
+.text-normal {
+  color: white;
+}
+
+.main-heading {
+  color: white;
+}
+.card-link {
+  font-size: 20px;
+  color: blue;
+}
+.active {
+  color: rgb(53, 177, 235) !important;
+}
+
+.container {
+  width: 100%;
+  padding: 0 !important;
+}
+
+/* Dropdown */
+.dropbtn {
+  background-color: black;
+  color: white;
+
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.modal-image {
+  height: 200px;
+  width: 300px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+/* cards */
+.mid-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card1 {
+  margin-top: 30px;
+  width: 400px;
+  border-radius: 50px 0px 50px;
+  background-color: rgb(53, 177, 235);
+}
+.card2 {
+  margin-top: 30px;
+
+  width: 400px;
+  border-radius: 50px 0px 50px;
+  background-color: rgb(53, 177, 235);
+}
+.card3 {
+  margin-top: 30px;
+
+  width: 400px;
+  border-radius: 50px 0px 50px;
+  background-color: rgb(53, 177, 235);
+}
+
+.card-image {
+  margin-top: 35px;
+  height: 250px;
+  width: 300px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.card-text {
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+footer {
+  background: #111;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-section {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.link2 {
+  margin-left: 20px;
+}
+
+@media (max-width: 500px) {
+  section {
+    padding: 80px 0;
+  }
+  .mid-cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .card1 {
+    width: 300px;
+    border-radius: 50px 0px 50px;
+  }
+  .card2 {
+    width: 300px;
+    margin-top: 40px;
+    border-radius: 50px 0px 50px;
+  }
+  .card3 {
+    width: 300px;
+    margin-top: 40px;
+
+    border-radius: 50px 0px 50px;
+  }
+
+  .card-image {
+    margin-top: 35px;
+    height: 250px;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  .menu-btn {
+    font-size: 10px !important;
+  }
+  .bluetick {
+    font-size: 15px;
+  }
+}

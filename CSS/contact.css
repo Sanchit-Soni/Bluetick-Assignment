@@ -1,0 +1,77 @@
+.fields {
+  display: flex;
+}
+.field,
+.fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.textarea {
+  height: 80px;
+  width: 100%;
+}
+.name {
+  margin-right: 10px;
+}
+.email {
+  margin-left: 10px;
+}
+.field input,
+.textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+.field input:focus,
+.textarea textarea:focus {
+  border-color: #b3b3b3;
+}
+.textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+.button {
+  height: 47px;
+  display: flex;
+  justify-content: space-around;
+}
+.button button {
+  width: 30%;
+  height: 100%;
+  border: 2px solid#1976d2;
+  background: #1976d2;
+  color: #fff;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button button:hover {
+  color: #1976d2;
+  background: none;
+}
+
+.form-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-text2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.contact-text {
+  padding: 20px;
+  font-size: 45px;
+  color: white;
+}
